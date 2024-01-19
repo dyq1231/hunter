@@ -5,7 +5,7 @@ import numpy as np
 # 读取CSV文件，忽略警告
 csv_file_path = ('D:/A-deng/hunter/1.17/sensor1/CH12/Waveform-right-180.csv')
 encoding = 'utf-8'
-data = pd.read_csv(csv_file_path, encoding=encoding, header=None, skiprows=1)
+data = pd.read_csv(csv_file_path, encoding=encoding, header=None, skiprows=2)
 
 #显示文件行数
 num_rows = len(data)
