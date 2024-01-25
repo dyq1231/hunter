@@ -1,10 +1,18 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
 
-csv_file_path='D:/A-deng/hunter/1.15/Waveform-pingheng.csv'
-data=pd.read_csv(csv_file_path)
+# 假设 Su 和 Sv 是 1D 数值型的列表
+Su = [-0.07038515615375261, -0.043474128323986366, -0.0200644517686476, 0.05931231527536219, -0.08312238623305954, -0.05492518387785999, -0.0717471479864387]
+Sv = [0.07038515615375261, 0.043474128323986366, 0.0200644517686476, -0.05931231527536219, 0.08312238623305954, 0.05492518387785999, 0.0717471479864387]
 
-x_data=
+# 将 Su 和 Sv 转换为 2D 数组
+Su_reshaped = np.array([Su])
+Sv_reshaped = np.array([Sv])
 
-"""num_rows=len(data)
-print(f'文件行数：{num_rows}')"""
+# 将 Su_reshaped 和 Sv_reshaped 水平堆叠
+S = np.vstack((Su_reshaped, Sv_reshaped))
+
+# 打印结果
+print(S)
+print(S.shape)
+
+
