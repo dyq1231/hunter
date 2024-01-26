@@ -1,4 +1,6 @@
- \left_0\left_0_sensor1_ch12.csv : 
+ \left_0\left_0_se
+                                     
+                                     1_ch12.csv : 
  fft + ifft fit : 
  s = 0.07422336013981094 *cos( 31.41592653589793 *x + -2.818595852554852 )
 
