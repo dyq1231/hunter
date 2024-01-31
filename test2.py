@@ -1,18 +1,22 @@
 import numpy as np
+import math
 
-# 假设 Su 和 Sv 是 1D 数值型的列表
-Su = [-0.07038515615375261, -0.043474128323986366, -0.0200644517686476, 0.05931231527536219, -0.08312238623305954, -0.05492518387785999, -0.0717471479864387]
-Sv = [0.07038515615375261, 0.043474128323986366, 0.0200644517686476, -0.05931231527536219, 0.08312238623305954, 0.05492518387785999, 0.0717471479864387]
+# Define the parameters
+angle = 1.9768690590246878
 
-# 将 Su 和 Sv 转换为 2D 数组
-Su_reshaped = np.array([Su])
-Sv_reshaped = np.array([Sv])
+# Solve for x
+# x_values = np.arccos(3.141592653589793*2 - angle) / 31.41592653589793
+x_values =0.13707430348215943
 
-# 将 Su_reshaped 和 Sv_reshaped 水平堆叠
-S = np.vstack((Su_reshaped, Sv_reshaped))
+# Print the result
+print("Possible values for x:", x_values)
+s = 0.0780826346935732 *np.cos( 31.41592653589793 *x_values + 1.9768690590246878 )
+print(s)
 
-# 打印结果
-print(S)
-print(S.shape)
+y = - angle / 31.41592653589793 + 0.2*4
+print(y)
+
+a=5.2644469875410635*np.cos(math.pi / 3)
+print(a)
 
 
